@@ -29,7 +29,6 @@ namespace L24_subarrayOfRepeatedNumbers
                     {
                         maxCounter = currentCounter;
                         foundNumber = mainArray[i];
-
                     }
 
                     currentCounter = 1;
