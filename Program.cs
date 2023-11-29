@@ -31,10 +31,13 @@ namespace L24_subarrayOfRepeatedNumbers
                         foundNumber = mainArray[i];
 
                     }
+
                     currentCounter = 1;
                 }
+
                 Console.Write(mainArray[i] + " ");
             }
+
             Console.WriteLine();
             Console.WriteLine($"Число {foundNumber} повторяется {maxCounter} раз подряд.");
         }
