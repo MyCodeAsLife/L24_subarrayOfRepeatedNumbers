@@ -10,16 +10,16 @@ namespace L24_subarrayOfRepeatedNumbers
     {
         static void Main(string[] args)
         {
-            int[] mainArray = { 1, 1, 2, 2, 3, 3, 3, 2, 2, 7, 7, 7, 7, 7, 7, 5, 5, 5, 9, 9, 9, 9, 4, 4, 4, 7, 7, 6, 6, 6 };
+            int[] numbers = { 1, 1, 2, 2, 3, 3, 3, 2, 2, 7, 7, 7, 7, 7, 7, 5, 5, 5, 9, 9, 9, 9, 4, 4, 4, 7, 7, 6, 6, 6 };
             int foundNumber = int.MinValue;
             int maxCounter = 0;
             int currentCounter = 1;
 
             Console.WriteLine("Исходный массив:");
 
-            for (int i = 0; i < mainArray.Length - 1; i++)
+            for (int i = 0; i < numbers.Length - 1; i++)
             {
-                if (mainArray[i] == mainArray[i + 1])
+                if (numbers[i] == numbers[i + 1])
                 {
                     currentCounter++;
                 }
@@ -28,13 +28,13 @@ namespace L24_subarrayOfRepeatedNumbers
                     if (maxCounter < currentCounter)
                     {
                         maxCounter = currentCounter;
-                        foundNumber = mainArray[i];
+                        foundNumber = numbers[i];
                     }
 
                     currentCounter = 1;
                 }
 
-                Console.Write(mainArray[i] + " ");
+                Console.Write(numbers[i] + " ");
             }
 
             Console.WriteLine();
